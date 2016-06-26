@@ -1,2 +1,2 @@
 # biointek
-Biointek
+![biointek](./mockups/biointek500.png)
