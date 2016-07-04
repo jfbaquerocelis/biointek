@@ -2,98 +2,130 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
+	<meta name="description" content="Biointek: Venta de equipos biomédicos, mantenimiento correctivo y preventivo." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
 	<title>Biointek S.A.S</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="public/css/style.css" />
 </head>
 <body>
 	<nav class="menu">
-		<ul class="menu__list">
-			<a class="menu__list__link-item" href="#header">
-				<li class="menu__list__item">INICIO</li>
+		<div class="nav-wrapper">
+			<a href="#" class="menu__content-image right">
+				<img src="./public/image/biointek.png" alt="BiointekSAS" class="menu__image" />
 			</a>
-			<a class="menu__list__link-item" href="#biointek">
-				<li class="menu__list__item">QUIENES SOMOS</li>
-			</a>
-			<a class="menu__list__link-item" href="#services">
-				<li class="menu__list__item">SERVICIOS</li>
-			</a>
-			<a class="menu__list__link-item" href="#products">
-				<li class="menu__list__item">PRODUCTOS</li>
-			</a>
-			<a class="menu__list__link-item" href="#contact">
-				<li class="menu__list__item">CONTACTO</li>
-			</a>
-		</ul>
-		<div class="menu__content-image">
-			<img src="./public/image/biointek.png" alt="BiointekSAS" class="menu__image" />
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<a class="menu__list__link-item" href="#header">
+					<li class="menu__list__item">INICIO</li>
+				</a>
+				<a class="menu__list__link-item" href="#biointek">
+					<li class="menu__list__item">QUIENES SOMOS</li>
+				</a>
+				<a class="menu__list__link-item" href="#services">
+					<li class="menu__list__item">SERVICIOS</li>
+				</a>
+				<a class="menu__list__link-item" href="#contact">
+					<li class="menu__list__item">CONTACTO</li>
+				</a>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<a class="menu__list__link-item" href="#header">
+					<li class="menu__list__item">INICIO</li>
+				</a>
+				<a class="menu__list__link-item" href="#biointek">
+					<li class="menu__list__item">QUIENES SOMOS</li>
+				</a>
+				<a class="menu__list__link-item" href="#services">
+					<li class="menu__list__item">SERVICIOS</li>
+				</a>
+				<a class="menu__list__link-item" href="#contact">
+					<li class="menu__list__item">CONTACTO</li>
+				</a>
+			</ul>
 		</div>
 	</nav>
-	<header class="header">
+	<header id="header" class="header z-depth-1">
 		<div class="header__blanket"></div>
 		<figure class="header__container-logo">
 			<img src="./public/image/biointek.png" alt="biointek" class="header__container-logo__logo" />
 		</figure>
-		<h1 class="header__text">SOMOS SOLUCIÓN <span class="text__bio">BIO</span>TÉCNICA</h2>
-		<h1 class="header__text">SOMOS <span class="text__bio">BIO</span>INTEK</h2>
+		<h3 class="header__text">SOMOS SOLUCIÓN <span class="text__bio">BIO</span>TÉCNICA</h2>
+		<h3 class="header__text">SOMOS <span class="text__bio">BIO</span>INTEK</h2>
 	</header>
-	<section class="mission">
-		<img src="#" alt="" class="mission__icon">
-		<div class="mission__content-description">
-			<h3 class="mission__title">SOMOS SOLUCIÓN, SOMOS <span class="text__bio">BIO</span>INTEK</h3>
-			<p class="mission__description">Mejorar la calidad del servicio y disminuir los costos en las instituciones del sector salud a través del adecuado mantenimiento de los equipos biomédicos; <strong>es nuestra misión</strong>.</p>
+	<section class="mission row">
+		<img src="./public/image/mission.png" alt="mission" class="mission__icon col l2 offset-l2 m4 offset-m1 s6 offset-s3" />
+		<div class="mission__content-description col s12 l6 m6">
+			<h4 class="mission__title">SOMOS SOLUCIÓN, SOMOS <span class="text__bio">BIO</span>INTEK</h3>
+			<p class="mission__description"><strong>Nuestra misión es</strong> mejorar la calidad del servicio y disminuir los costos en las instituciones del sector salud a través del adecuado mantenimiento de los equipos biomédicos, brindándoles  acompañamiento integral en la adquisición de equipos, repuestos y accesorios biomédicos.</p>
 		</div>
 	</section>
-	<section class="biointek">
-		<p class="biointek__vission"><strong>BIOINTEK S.A.S</strong> se proyecta en los próximos años como la empresa líder en mantenimiento de equipos biomédicos en la región caribe, caracterizados por brindar soluciones efectivas y eficientes a todas las instituciones del sector salud.</p>
-		<h2 class="biointek__title">OBJETIVOS DE CALIDAD</h2>
-		<ul class="biointek__goals-list">
-			<li class="biointek__goals">Garantizar la satisfacción de las partes interesadas.</li>
-			<li class="biointek__goals">Cumplir con los requisitos del sistema de gestión de la calidad.</li>
-			<li class="biointek__goals">Aumentar la rentabilidad de la empresa.</li>
-			<li class="biointek__goals">Garantizar la mejora de los procesos institucionales.</li>
-			<li class="biointek__goals">Aumentar la demanda de nuestros servicios.</li>
-			<li class="biointek__goals">Mejorar las competencias del personal de la organización.</li>
-			<li class="biointek__goals">Reducir el número de peticiones, quejas y reclamos.</li>
+	<section id="biointek" class="biointek z-depth-1 row">
+		<p class="biointek__vission col l6 offset-l3 m8 offset-m2 s10 offset-s1"><strong>BIOINTEK S.A.S</strong> se proyecta en los próximos años como la empresa líder en mantenimiento de equipos biomédicos en la región caribe, caracterizados por brindar soluciones efectivas y eficientes a todas las instituciones del sector salud.</p>
+		<h4 class="biointek__title col s10 offset-s1">OBJETIVOS DE CALIDAD</h4>
+		<ul class="biointek__goals-list col s10 offset-s1">
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Garantizar la satisfacción de las partes interesadas.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Cumplir con los requisitos del sistema de gestión de la calidad.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Aumentar la rentabilidad de la empresa.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Garantizar la mejora de los procesos institucionales.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Aumentar la demanda de nuestros servicios.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Mejorar las competencias del personal de la organización.</li>
+			<li class="biointek__goals col m6 s12"><i class="material-icons biointek__icon">done</i>Reducir el número de peticiones, quejas y reclamos.</li>
 		</ul>
-		<div class="biointek__content-policies">
-			<img src="#" alt="" class="biointek__policies__image">
-			<div class="biointek__policies">
-				<h3 class="biointek__policies__title">Políticas de Calidad</h3>
-				<p class="biointek__policies__description">La alta gerencia de <strong>BIOINTEK S.A.S</strong>, organización dedicada a la prestación de servicios de mantenimiento en las instituciones de salud, se compromete a designar los recursos necesarios para el adecuado cumplimiento de los requisitos del sistema de gestión de la calidad teniendo como objetivo satisfacer las necesidades de los diferentes grupos de interés y lograr un mejoramiento continuo en todos los procesos institucionales.</p>
+		<div class="biointek__content-policies col l8 offset-l2 m10 offset-m1 s10 offset-s1">
+			<img src="./public/image/policies.png" alt="policies" class="biointek__policies__image col m3 s6 offset-s3">
+			<div class="biointek__policies col m9 s12">
+				<h6 class="biointek__policies__title">POLÍTICAS DE CALIDAD</h6>
+				<p class="biointek__policies__description">La alta gerencia de <strong>BIOINTEK S.A.S</strong> se compromete a designar los recursos necesarios para el adecuado cumplimiento de los requisitos del sistema de gestión de la calidad teniendo como objetivo satisfacer las necesidades de los diferentes grupos de interés y lograr un mejoramiento contínuo en todos los procesos institucionales.</p>
 			</div>
 		</div>
 	</section>
-	<section class="services">
-		<h2 class="services__title">NUESTROS SERVICIOS</h2>
-		<P class="services__description">El principal objetivo de nuestra empresa es prestar un adecuado mantenimiento preventivo y correctivo en las instituciones de salud; realizándoles acompañamiento proactivo para disminuirles los costos de mantenimiento, paradas de equipo inesperadas, aumentar la vida útil de sus equipos a través de acciones preventivas y encontrar soluciones eficientes.</P>
-
-		<article class="services__container">
-			<img src="#" alt="" class="services__icon">
-			<h3 class="services__title">Mantenimiento Correctivo</h3>
-			<p class="services__description">Nuestros ingenieros están en la capacidad de evaluar las condiciones de cualquier inconveniente presentado en los equipos biomédicos, diagnosticar la falla y encontrar la solución idónea, optimizando costos, tiempo y recursos.</p>
-		</article>
-		<article class="services__container">
-			<img src="#" alt="" class="services__icon">
-			<h3 class="services__title">Mantenimiento Preventivo</h3>
-			<p class="services__description">Prestamos un servicio de mantenimientos preventivos y predictivo eficiente  a los equipos biomédicos, empleamos protocolos  y procedimientos documentados basados en los manuales de mantenimiento de cada fabricante, además contamos con todos los analizadores y herramientas necesarios para verificar las variables críticas en cada equipo biomédico.</p>
-		</article>
-		<article class="services__container">
-			<img src="#" alt="" class="services__icon">
-			<h3 class="services__title">Venta de Equipos Biomédicos</h3>
-			<p class="services__description">Ofrecemos gran variedad de equipos y accesorios biomédicos, los cuales cumplen con todas las exigencias del INVIMA, cuentan con precios altamente competitivos en el mercado y alta calidad.</p>
-		</article>
-	</section>
-	<section class="contact">
-		<h2 class="contact__title">CONTACTO</h2>
-		<p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ducimus earum sunt nesciunt, rerum dolor quos delectus veritatis provident fugit excepturi ad maxime ipsam, velit quisquam enim perferendis obcaecati ut.</p>
-		<div class="contact__data">
-			<!-- Aquí va toda la información -->
+	<section id="services" class="services row">
+		<h4 class="services__title-main col m8 offset-m2 s10 offset-s1">NUESTROS SERVICIOS</h4>
+		<P class="services__description-main col m8 offset-m2 s10 offset-s1">El principal objetivo de nuestra empresa es prestar un adecuado mantenimiento preventivo y correctivo en las instituciones de salud; realizando un acompañamiento proactivo para disminuir los costos de mantenimiento. Estos son nuestros servicios:</P>
+		<div class="container col l8 offset-l2 m10 offset-m1 s10 offset-s1">
+			<article class="services__container col m4 s12">
+				<i class="material-icons services__icon large">build</i>
+				<h5 class="services__title">Mantenimiento Correctivo</h5>
+				<p class="services__description">Nuestros ingenieros están en la capacidad de evaluar las condiciones de cualquier inconveniente presentado en los equipos biomédicos, diagnosticar la falla y encontrar la solución idónea, optimizando costos, tiempo y recursos.</p>
+			</article>
+			<article class="services__container col m4 s12">
+				<i class="material-icons services__icon large">find_replace</i>
+				<h5 class="services__title">Mantenimiento Preventivo</h5>
+				<p class="services__description">Prestamos un servicio de mantenimientos preventivos eficientes a los equipos biomédicos, además contamos con todas las herramientas necesarias para verificar las variables críticas en cada equipo biomédico.</p>
+			</article>
+			<article class="services__container col m4 s12">
+				<i class="material-icons services__icon large">shopping_cart</i>
+				<h5 class="services__title">Venta de Equipos Biomédicos</h5>
+				<p class="services__description">Ofrecemos gran variedad de equipos y accesorios biomédicos, los cuales cumplen con todas las exigencias del INVIMA, cuentan con precios altamente competitivos en el mercado y alta calidad.</p>
+			</article>
 		</div>
-		<div class="contact__map">
-			<!-- Aquí va el mapa de google -->
+	</section>
+	<section id="contact" class="contact row">
+		<h4 class="contact__title col m8 offset-m2 s10 offset-s1">CONTACTO</h4>
+		<p class="contact__description col m8 offset-m2 s10 offset-s1">En <strong>BIOINTEK</strong> nuestro deseo es que nuestros clientes reciban la mejor atención posible, para ello es bueno mantener contacto. Si quieres saber que hacemos y como trabajamos, no dudes en comunicarte con nosotros. <i class="material-icons">sentiment_very_satisfied</i></p>
+		<div class="contact__content col s10 offset-s1">
+			<div class="contact__map col l6 s12" id="contact__map">
+				<!-- Aquí va el mapa de google -->
+			</div>
+			<div class="contact__data col l6 s12">
+				<p><strong>Dirección:</strong> Cra 12 #24-54</p>
+				<p><strong>Teléfonos:</strong> 300 215 6450</p>
+				<p><strong>E-mail Biointek:</strong> <a href="mailto:biointeksas@gmail.com" target="_blank">biointeksas@gmail.com</a></p>
+				<p><strong>E-mail Mantenimiento:</strong> <a href="mailto:mantenimientobiointek@gmail.com" target="_blank">mantenimientobiointek@gmail.com</a></p>
+				<p>Montería - Córdoba</p>
+			</div>
 		</div>
 	</section>
 	<footer class="footer">
-		
+		<p class="footer__created">Created by <a target="_blank" href="http://jfbaquerocelis.github.io/Portafolio/">jfbaquerocelis</a></p>
+		<div>Icons made by <a target="_blank" href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a target="_blank" href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 	</footer>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbuw1latEHHh969xAXu-pQBXQYFEROPmQ" type="text/javascript"></script>
+	<script src="public/js/biointek.js"></script>
 </body>
 </html>

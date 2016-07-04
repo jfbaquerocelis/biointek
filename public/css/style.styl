@@ -1,0 +1,238 @@
+@import 'nib/vendor'
+@import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'
+
+vendor-prefixes = o ms webkit moz official
+
+// Colour Palette
+bioGreen = #97b844
+blackbioGreen = #759622
+Grey = #B6B6B6
+myBlack = #2e3436
+
+/* Animations */
+@keyframes hearth_beat
+	0%
+		transform scale3d(.9, .9, 0)
+	50%
+		transform scale3d(1.1, 1.1, 0)
+	100%
+		transform scale3d(.9, .9, 0)
+
+body
+	font-size 16px
+	position relative
+	color myBlack
+
+// Section menu
+.menu
+	background-color bioGreen
+	position fixed
+	top 0
+	z-index 999
+	&__content-image
+		background-color white
+		width 9.5rem
+		position relative
+		height 100%
+		&:before
+			content ""
+			width 4rem
+			height 100%
+			display block
+			background-color bioGreen
+			border-right 60px solid white
+			border-top 63px solid transparent
+	&__image
+		width 4.1rem
+		position absolute
+		right 1rem
+		top 10%
+
+// Section header
+.header
+	background-image url('../image/biomedica.jpg')
+	background-repeat no-repeat
+	background-size cover
+	position relative
+	padding-bottom 4rem
+	&:hover .header__text
+		text-decoration underline
+	&__blanket
+		position absolute
+		width 100%
+		height 100%
+		background-color white
+		opacity .5
+		z-index 0
+	&__container-logo
+		position relative
+		padding 8rem 0 0
+		width 100%
+		margin 0 0 2rem
+		&__logo
+			display block
+			margin 0 auto
+			width 15rem
+	&__text
+		font-size 2.5rem
+		color #5c5752
+		text-align center
+		position relative
+		margin .5rem
+.text__bio
+	color bioGreen
+
+// Section mission
+.mission
+	margin-top 2rem
+	&__icon
+		border-radius 50%
+
+// Section Biointek
+.biointek
+	background-color bioGreen
+	padding 2rem 0
+	color white
+	text-align center
+	&__vission
+		font-style italic
+		border-top 3px solid blackbioGreen
+		border-bottom 3px solid blackbioGreen
+	&__goals-list
+		text-align left
+	&__goals
+		display inline-flex
+		margin .5rem 0rem
+	&__icon
+		color blackbioGreen
+		padding-right .3rem
+	&__content-policies
+		margin 2rem 0
+	&__policies__image
+		width 5rem
+		animation-name hearth_beat
+		animation-duration .8s
+		animation-iteration-count infinite
+		// animation-fill-mode forwards
+	&__policies
+		text-align left
+		&__title
+			font-size 1.2rem
+			font-weight 700
+			margin 0
+			padding 0 0 .2rem
+			border-bottom 2px solid blackbioGreen
+		&__description
+			font-size 1rem
+			margin .5rem 0
+
+// Section Services
+.services
+	text-align center
+	&__description-main
+		font-style italic
+		color #666
+	&__title
+		font-size 1.1rem
+		font-weight 500
+	&__description
+		text-align left
+		font-size .95rem
+	&__container
+		cursor pointer
+		transition .2s all ease
+		&.col
+			padding 1rem .5rem
+		&:hover
+			background-color bioGreen
+			color white
+		&:hover ^[0]__icon
+			background-color white
+			color bioGreen
+			transform rotate3d(1, 1, 0, 360deg)
+	&__icon
+		color white
+		padding 1.5rem
+		border-radius 50%
+		background-color bioGreen
+		transform rotate3d(0, 0, 0, 0)
+		transition all .3s ease
+
+// Section Contact
+.contact
+	background-color bioGreen
+	color white
+	text-align center
+	padding 1rem 0 2rem
+	&.row
+		margin-bottom 0
+	&__description
+		margin 0 0 1rem
+	&__map
+		width 100%
+		height 20rem
+		background-color myBlack
+	&__data.col
+		padding 5rem 0
+	&__data p
+		margin 0
+	&__data p a
+		color white
+		text-decoration underline
+		&:hover
+			color myBlack
+
+// Section footer
+.footer
+	background-color myBlack
+	color white
+	text-align center
+	padding 2rem 0
+	box-shadow 0 -1px 5px #666
+	font-size .95rem
+	&__created
+		font-size 1.1rem
+		margin 0
+		padding .5rem 0
+	& a
+		color bioGreen
+		&:hover
+			text-decoration underline
+
+// *************************** Viewport width ******************************
+@media screen and (max-width : 1161px)
+	// Section mission
+	.mission
+		&__title
+			font-size 2.1rem
+
+// *************************** Viewport width ******************************
+@media screen and (max-width : 900px)
+	// Section services
+	.services
+		&__description
+			display none
+
+// *************************** Viewport width ******************************
+@media screen and (max-width : 600px)
+	// Section menu
+	.menu
+		&__content-image
+			width 6rem
+			&:before
+				display none
+	// Section mission
+	.mission
+		&__content-description
+			text-align center
+	// Section biointek
+	.biointek
+		&__policies
+			text-align center
+			&__title
+				font-size 2rem
+	// Section services
+	.services
+		&__description
+			display block
+			text-align center
